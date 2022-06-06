@@ -8,15 +8,18 @@ todo esto trabajado en un fichero como espacio de trabajo
 
 instalar java antes para con el respectivo jdk necesario 
 
-git clone jmeter
+```
+git clone https://github.com/apache/jmeter.git
 docker pull sonarqube
 docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube
-
+```
 por defecto al querer conectarte a sonarqube deployado te generará
 un usuario base llamado
 
+```
 username: admin
 password: admin
+```
 
 deberas cambiar tu contraseña cuando ingreses
 
@@ -42,9 +45,12 @@ Aparecerá un menú con distintas opciones para correr el analisis en distintos 
   -Dsonar.login=${GENERATED_KEY}
 ```
 
-GENERATED_KEY = KEY GENERADA EN EL PASO ANTERIOR
-URL_TO_SONARQUBE_INSTANCE = URL DONDE está desplegada nuestra instancia de sonarqube
-PROJECTNAME = nombre del projecto asignado
+
+```sh
+GENERATED_KEY="KEY GENERADA EN EL PASO ANTERIOR"
+URL_TO_SONARQUBE_INSTANCE="URL DONDE está desplegada nuestra instancia de sonarqube"
+PROJECTNAME="nombre del projecto asignado"
+```
 
 
 una vez tengamos sonarqube corriendo y clonado el repositorio de github de JMeter y no tenemos ninguna dependencia con Java o sus versiones podemos correr el comando que sonarqube nos ha dado dentro del projecto como tal.
