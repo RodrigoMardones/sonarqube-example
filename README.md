@@ -56,3 +56,8 @@ PROJECTNAME="nombre del projecto asignado"
 una vez tengamos sonarqube corriendo y clonado el repositorio de github de JMeter y no tenemos ninguna dependencia con Java o sus versiones podemos correr el comando que sonarqube nos ha dado dentro del projecto como tal.
 
 esto generará el informe correspondiente en nuestra instancia de sonarqube.
+
+
+### quality gates 
+
+en el menú principal puedes agregar "quality gates", que son restricciones asociados a reglas/restricciones de parametros de porcentajes.
